@@ -860,24 +860,16 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
 }
 
-.ease-linear{
-  transition-timing-function: linear;
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .card{
@@ -937,18 +929,6 @@ video {
   background-color: rgb(136 136 131 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-opacity-50:hover{
-  --tw-bg-opacity: 0.5;
-}
-
-.hover\:bg-opacity-10:hover{
-  --tw-bg-opacity: 0.1;
-}
-
-.hover\:bg-opacity-100:hover{
-  --tw-bg-opacity: 1;
-}
-
 .hover\:bg-opacity-70:hover{
   --tw-bg-opacity: 0.7;
 }
@@ -993,10 +973,6 @@ video {
 
   .md\:col-span-3{
     grid-column: span 3 / span 3;
-  }
-
-  .md\:block{
-    display: block;
   }
 
   .md\:flex{
